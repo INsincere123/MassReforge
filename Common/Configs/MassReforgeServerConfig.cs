@@ -17,5 +17,13 @@ namespace MassReforge.Common.Configs
 
         [DefaultValue(true)]
         public bool PreferRuthlessForSummonWeapons { get; set; } = true;
+
+        [DefaultValue(22)]
+        [Range(0, 1000)]
+        public int WeaponScrollPricePlatinum { get; set; } = 22;
+
+        [DefaultValue(35)]
+        [Range(0, 1000)]
+        public int AccessoryScrollPricePlatinum { get; set; } = 35;
     }
 }

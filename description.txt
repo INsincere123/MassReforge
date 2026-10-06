@@ -2,7 +2,12 @@
 
 一张券，一次重铸全部适用物品。
 
-从哥布林工匠购买武器重铸券或饰品重铸券，选好词条后一键重铸：武器券覆盖背包与快捷栏的武器和工具，可逐件选择价值最高的合法词条；饰品券覆盖背包、全部配装、外观与模组饰品槽。收藏物品也参与，鼠标上的物品不作为目标。至少成功修改一件才消耗一张券，不额外收费。默认排除灾厄的骇人词条，可在服务端设置中关闭。无需其他模组。
+- 武器重铸券：重铸背包与快捷栏的武器和工具。
+- 饰品重铸券：重铸背包、全部配装、外观与模组饰品槽。
+- 词条可自选，武器支持按应用后价值选择“最高级”。
+- 至少修改一件才消耗一张券，不额外收费。
+- 默认排除灾厄的骇人词条，可在服务端设置中关闭。
+- 无需其他模组。
 
 Buy Weapon Reforge Scrolls (22 platinum) or Accessory Reforge Scrolls (35 platinum) from the Goblin Tinkerer and reforge all compatible items in one operation. One scroll is consumed only when at least one item changes, with no additional coin cost.
 Weapon scrolls cover inventory and hotbar weapons and tools, with a Best Available option based on resulting item value. Accessory scrolls cover inventory, all loadouts, vanity and modded accessory slots. Favorites are included; items on the cursor are excluded as targets.

@@ -12,6 +12,16 @@ Configs: {
 			Label: Prefer Ruthless for non-whip summon weapons
 			Tooltip: Enabled by default. Best Available selects Ruthless for summon weapons other than whips when legal. If Ruthless is incompatible, or this setting is disabled, selects the legal modifier with the highest resulting item value. Does not affect explicitly selected modifiers. Uses the server's setting in multiplayer.
 		}
+
+		WeaponScrollPricePlatinum: {
+			Label: Weapon Reforge Scroll price (platinum)
+			Tooltip: Adjusts the shop price of Weapon Reforge Scrolls.
+		}
+
+		AccessoryScrollPricePlatinum: {
+			Label: Accessory Reforge Scroll price (platinum)
+			Tooltip: Adjusts the shop price of Accessory Reforge Scrolls.
+		}
 	}
 }
 
