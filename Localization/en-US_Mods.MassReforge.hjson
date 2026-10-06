@@ -1,26 +1,26 @@
 Configs: {
 	MassReforgeServerConfig: {
-		DisplayName: Mass Reforge Settings
+		DisplayName: MassReforge Settings
 		Headers.Reforging: Reforge Scrolls
 
 		IgnoreCalamityHorriblePrefix: {
-			Label: Ignore Calamity's Horrible modifier
-			Tooltip: Enabled by default. Excludes Calamity's Horrible modifier from scroll choices and Best Available. Disable to allow it as a candidate. Only affects reforge scrolls; existing modifiers and other ways to obtain them are unchanged. Has no effect without Calamity. Uses the server's setting in multiplayer.
+			Label: Skip Calamity's Horrible modifier
+			Tooltip: Excludes Calamity's Horrible modifier from scroll choices. Enabled by default.
 		}
 
 		PreferRuthlessForSummonWeapons: {
 			Label: Prefer Ruthless for non-whip summon weapons
-			Tooltip: Enabled by default. Best Available selects Ruthless for summon weapons other than whips when legal. If Ruthless is incompatible, or this setting is disabled, selects the legal modifier with the highest resulting item value. Does not affect explicitly selected modifiers. Uses the server's setting in multiplayer.
+			Tooltip: Best Available prefers Ruthless for non-whip summon weapons. Enabled by default.
 		}
 
 		WeaponScrollPricePlatinum: {
 			Label: Weapon Reforge Scroll price (platinum)
-			Tooltip: Adjusts the shop price of Weapon Reforge Scrolls.
+			Tooltip: Sets what the Goblin Tinkerer charges for Weapon Reforge Scrolls.
 		}
 
 		AccessoryScrollPricePlatinum: {
 			Label: Accessory Reforge Scroll price (platinum)
-			Tooltip: Adjusts the shop price of Accessory Reforge Scrolls.
+			Tooltip: Sets what the Goblin Tinkerer charges for Accessory Reforge Scrolls.
 		}
 	}
 }
@@ -30,11 +30,9 @@ Items: {
 		DisplayName: Weapon Reforge Scroll
 		Tooltip:
 			'''
-			Choose a modifier and reforge all compatible weapons in your inventory and hotbar
-			Includes reforgable pickaxes, axes, hammers and favorited weapons; excludes ammunition and the held cursor item
-			Best Available selects the valid modifier with the highest resulting item value for each weapon
-			By default, non-whip summon weapons prefer Ruthless when legal; configurable in server settings
-			Consumes one scroll only if at least one weapon changes; no additional coin cost
+			Choose a modifier and reforge all eligible weapons and tools in your inventory and hotbar (excludes ammo and the item on your cursor)
+			Best Available selects the modifier with the highest resulting item value; non-whip summon weapons prefer Ruthless by default
+			Consumes one scroll only if at least one weapon changes, at no additional cost
 			'''
 	}
 
@@ -42,46 +40,44 @@ Items: {
 		DisplayName: Accessory Reforge Scroll
 		Tooltip:
 			'''
-			Choose a modifier and reforge all compatible accessories
-			Includes inventory, hotbar, all loadouts, vanity slots and modded accessory slots
-			Favorited accessories are included; incompatible items and items already matching the modifier remain unchanged
-			Consumes one scroll only if at least one accessory changes; no additional coin cost
+			Choose a modifier and reforge all eligible accessories across your inventory, loadouts, vanity slots, and modded accessory slots
+			Consumes one scroll only if at least one accessory changes, at no additional cost
 			'''
 	}
 }
 
 UI: {
 	WeaponReforge: {
-		Title: Mass Weapon Reforge
-		Hint: Inventory / hotbar weapons and tools, including favorites
-		SelectPrefix: Choose a modifier or Best Available
+		Title: Reforge Weapons
+		Hint: Weapons and tools in your inventory and hotbar
+		SelectPrefix: Pick a modifier or Best Available
 		Highest: Best Available
-		HighestHint: Selects the valid modifier with the highest resulting item value for each weapon. Ties favor the current modifier. With the summon setting enabled, non-whip summon weapons prefer Ruthless when legal.
+		HighestHint: Selects the modifier with the highest resulting item value. Ties favor the current modifier. Non-whip summon weapons prefer Ruthless by default.
 		Counts: Changes: {0} · Matching: {1} · Skipped: {2}
 		Confirm: Reforge All
 		Refresh: Refresh
 		Cancel: Cancel
-		Empty: No reforgable weapons or tools found
-		StorageError: Cannot read weapon storage; operation stopped
-		Unavailable: Wait for your item animation to finish and try again
-		NoScroll: No weapon scroll in your inventory or on the cursor
-		NoChanges: No weapons changed; no scroll consumed
-		Success: Changed {0} weapons; {1} already matched, {2} skipped. Consumed one weapon scroll.
+		Empty: No weapons or tools can be reforged right now
+		StorageError: Couldn't read your weapon storage, so nothing was changed
+		Unavailable: Wait for your item use animation to finish, then try again
+		NoScroll: No Weapon Reforge Scroll in your inventory or on your cursor
+		NoChanges: Nothing changed, so no scroll was consumed
+		Success: Reforged {0} weapons. {1} already matched, {2} skipped. Consumed one Weapon Reforge Scroll.
 	}
 
 	AccessoryReforge: {
-		Title: Mass Accessory Reforge
-		Hint: Inventory, all loadouts, vanity and modded slots
-		SelectPrefix: Choose an accessory modifier
+		Title: Reforge Accessories
+		Hint: Accessories across your inventory, loadouts, vanity slots, and modded slots
+		SelectPrefix: Pick an accessory modifier
 		Counts: Changes: {0} · Matching: {1} · Skipped: {2}
 		Confirm: Reforge All
 		Refresh: Refresh
 		Cancel: Cancel
-		Empty: No reforgable accessories found
-		StorageError: Cannot read all accessory slots; operation stopped
-		Unavailable: Wait for your item animation to finish and try again
-		NoScroll: No accessory scroll in your inventory or on the cursor
-		NoChanges: No accessories changed; no scroll consumed
-		Success: Changed {0} accessories; {1} already matched, {2} skipped. Consumed one accessory scroll.
+		Empty: No accessories can be reforged right now
+		StorageError: Couldn't read all your accessory slots, so nothing was changed
+		Unavailable: Wait for your item use animation to finish, then try again
+		NoScroll: No Accessory Reforge Scroll in your inventory or on your cursor
+		NoChanges: Nothing changed, so no scroll was consumed
+		Success: Reforged {0} accessories. {1} already matched, {2} skipped. Consumed one Accessory Reforge Scroll.
 	}
 }

@@ -11,14 +11,13 @@
 [/list]
 
 [h1]MassReforge[/h1]
-Reforge all compatible items with one scroll.
+Tired of running back to the Goblin Tinkerer for every single item? Grab a scroll, pick your modifier, and reforge everything eligible at once.
 
 [list]
-[*]Weapon Reforge Scroll: sold by the Goblin Tinkerer for 22 platinum. Covers inventory and hotbar weapons, pickaxes, axes and hammers.
-[*]Accessory Reforge Scroll: sold for 35 platinum. Covers inventory, all loadouts, vanity and modded accessory slots.
-[*]Choose a valid modifier, or use Best Available for weapons. It selects the modifier with the highest resulting item value for each weapon; ties favor the current modifier.
-[*]Favorited items are included; cursor items are excluded as targets. Incompatible items and items already matching the target remain unchanged.
-[*]Consumes one scroll only when at least one item changes, with no additional coin cost. Preview change, matching and skip counts before confirming.
-[*]A server setting excludes Calamity's Horrible modifier by default. It can be disabled and only affects reforge scrolls.
-[*]Supports English and Simplified Chinese. No other mods required.
+[*]Weapon Reforge Scroll (Goblin Tinkerer, 22 platinum by default): reforges eligible weapons and tools in your inventory and hotbar.
+[*]Accessory Reforge Scroll (Goblin Tinkerer, 35 platinum by default): reforges eligible accessories across your inventory, loadouts, vanity slots, and modded accessory slots.
+[*]Choose from the available modifiers, including modded ones, or use Best Available for weapons to select the modifier with the highest resulting item value. Non-whip summon weapons prefer Ruthless by default.
+[*]Calamity's Horrible modifier is excluded by default. Can be disabled in the mod settings.
+[*]Consumes one scroll only if at least one item changes, at no additional cost.
+[*]No other mods needed.
 [/list]
