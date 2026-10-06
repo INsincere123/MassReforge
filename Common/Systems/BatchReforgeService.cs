@@ -23,6 +23,8 @@ namespace MassReforge.Common.Systems
         internal const int HighestPrefix = -1;
         internal static bool IgnoreCalamityHorriblePrefix =>
             MassReforgeServerConfig.Instance?.IgnoreCalamityHorriblePrefix ?? true;
+        internal static bool PreferRuthlessForSummonWeapons =>
+            MassReforgeServerConfig.Instance?.PreferRuthlessForSummonWeapons ?? true;
         // 原版 inventory[58] 是 Main.mouseItem 的逐帧克隆，不属于实际背包存储。
         private const int MouseItemSlot = 58;
         internal sealed class Slot
@@ -190,6 +192,16 @@ namespace MassReforge.Common.Systems
             {
                 // 每个候选从同一无前缀克隆出发，避免叠加旧前缀价值或重复序列化。
                 Item clean = UnprefixedClone(original);
+                // 召唤伤害继承覆盖模组武器；鞭子按伤害类型和弹幕标记排除。
+                bool isWhip = original.CountsAsClass(DamageClass.SummonMeleeSpeed) ||
+                    (original.shoot > ProjectileID.None && original.shoot < ProjectileID.Sets.IsAWhip.Length &&
+                        ProjectileID.Sets.IsAWhip[original.shoot]);
+                if (PreferRuthlessForSummonWeapons && original.CountsAsClass(DamageClass.Summon) &&
+                    !isWhip && TryPrepare(clean, PrefixID.Ruthless, false, out _))
+                {
+                    bestPrefix = PrefixID.Ruthless;
+                    return true;
+                }
                 int bestValue = int.MinValue;
                 foreach (int prefix in prefixes)
                 {

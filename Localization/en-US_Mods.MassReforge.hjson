@@ -7,6 +7,11 @@ Configs: {
 			Label: Ignore Calamity's Horrible modifier
 			Tooltip: Enabled by default. Excludes Calamity's Horrible modifier from scroll choices and Best Available. Disable to allow it as a candidate. Only affects reforge scrolls; existing modifiers and other ways to obtain them are unchanged. Has no effect without Calamity. Uses the server's setting in multiplayer.
 		}
+
+		PreferRuthlessForSummonWeapons: {
+			Label: Prefer Ruthless for non-whip summon weapons
+			Tooltip: Enabled by default. Best Available selects Ruthless for summon weapons other than whips when legal. If Ruthless is incompatible, or this setting is disabled, selects the legal modifier with the highest resulting item value. Does not affect explicitly selected modifiers. Uses the server's setting in multiplayer.
+		}
 	}
 }
 
@@ -18,6 +23,7 @@ Items: {
 			Choose a modifier and reforge all compatible weapons in your inventory and hotbar
 			Includes reforgable pickaxes, axes, hammers and favorited weapons; excludes ammunition and the held cursor item
 			Best Available selects the valid modifier with the highest resulting item value for each weapon
+			By default, non-whip summon weapons prefer Ruthless when legal; configurable in server settings
 			Consumes one scroll only if at least one weapon changes; no additional coin cost
 			'''
 	}
@@ -40,7 +46,7 @@ UI: {
 		Hint: Inventory / hotbar weapons and tools, including favorites
 		SelectPrefix: Choose a modifier or Best Available
 		Highest: Best Available
-		HighestHint: Selects the valid modifier with the highest resulting item value for each weapon. Ties favor the current modifier.
+		HighestHint: Selects the valid modifier with the highest resulting item value for each weapon. Ties favor the current modifier. With the summon setting enabled, non-whip summon weapons prefer Ruthless when legal.
 		Counts: Changes: {0} · Matching: {1} · Skipped: {2}
 		Confirm: Reforge All
 		Refresh: Refresh

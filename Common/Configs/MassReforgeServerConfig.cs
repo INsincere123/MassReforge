@@ -14,5 +14,8 @@ namespace MassReforge.Common.Configs
         [Header("Reforging")]
         [DefaultValue(true)]
         public bool IgnoreCalamityHorriblePrefix { get; set; } = true;
+
+        [DefaultValue(true)]
+        public bool PreferRuthlessForSummonWeapons { get; set; } = true;
     }
 }

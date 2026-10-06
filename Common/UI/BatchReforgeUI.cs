@@ -25,6 +25,7 @@ namespace MassReforge.Common.UI
         private bool storageReady;
         private int eligible;
         private bool ignoreCalamityHorriblePrefix;
+        private bool preferRuthlessForSummonWeapons;
 
         private string Text(string key, params object[] args) =>
             Language.GetTextValue("Mods.MassReforge.UI." +
@@ -95,6 +96,7 @@ namespace MassReforge.Common.UI
             selected = null;
             eligible = 0;
             ignoreCalamityHorriblePrefix = BatchReforgeService.IgnoreCalamityHorriblePrefix;
+            preferRuthlessForSummonWeapons = BatchReforgeService.PreferRuthlessForSummonWeapons;
             storageReady = BatchReforgeService.TryOptions(Main.LocalPlayer, Kind, out var options);
             bool hasPreview = options.Exists(option => option.Preview != null);
             status.SetText(storageReady ? (!hasPreview ? Text("Empty") : "") : Text("StorageError"));
@@ -164,7 +166,8 @@ namespace MassReforge.Common.UI
 
         public override void Update(GameTime gameTime)
         {
-            if (ignoreCalamityHorriblePrefix != BatchReforgeService.IgnoreCalamityHorriblePrefix)
+            if (ignoreCalamityHorriblePrefix != BatchReforgeService.IgnoreCalamityHorriblePrefix ||
+                preferRuthlessForSummonWeapons != BatchReforgeService.PreferRuthlessForSummonWeapons)
                 Refresh();
             base.Update(gameTime);
             if (++timer >= 30)
