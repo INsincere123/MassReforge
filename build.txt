@@ -1,0 +1,5 @@
+displayName = 批量重铸 / MassReforge
+author = Zelda
+version = 0.1
+side = Both
+buildIgnore = *.csproj, *.user, *.sln, *.md, obj\*, bin\*, .vs\*, .git\*, Properties\*

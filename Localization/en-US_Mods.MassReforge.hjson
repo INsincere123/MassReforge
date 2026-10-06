@@ -1,0 +1,71 @@
+Configs: {
+	MassReforgeServerConfig: {
+		DisplayName: Mass Reforge Settings
+		Headers.Reforging: Reforge Scrolls
+
+		IgnoreCalamityHorriblePrefix: {
+			Label: Ignore Calamity's Horrible modifier
+			Tooltip: Enabled by default. Excludes Calamity's Horrible modifier from scroll choices and Best Available. Disable to allow it as a candidate. Only affects reforge scrolls; existing modifiers and other ways to obtain them are unchanged. Has no effect without Calamity. Uses the server's setting in multiplayer.
+		}
+	}
+}
+
+Items: {
+	WeaponReforgeScroll: {
+		DisplayName: Weapon Reforge Scroll
+		Tooltip:
+			'''
+			Choose a modifier and reforge all compatible weapons in your inventory and hotbar
+			Includes reforgable pickaxes, axes, hammers and favorited weapons; excludes ammunition and the held cursor item
+			Best Available selects the valid modifier with the highest resulting item value for each weapon
+			Consumes one scroll only if at least one weapon changes; no additional coin cost
+			'''
+	}
+
+	AccessoryReforgeScroll: {
+		DisplayName: Accessory Reforge Scroll
+		Tooltip:
+			'''
+			Choose a modifier and reforge all compatible accessories
+			Includes inventory, hotbar, all loadouts, vanity slots and modded accessory slots
+			Favorited accessories are included; incompatible items and items already matching the modifier remain unchanged
+			Consumes one scroll only if at least one accessory changes; no additional coin cost
+			'''
+	}
+}
+
+UI: {
+	WeaponReforge: {
+		Title: Mass Weapon Reforge
+		Hint: Inventory / hotbar weapons and tools, including favorites
+		SelectPrefix: Choose a modifier or Best Available
+		Highest: Best Available
+		HighestHint: Selects the valid modifier with the highest resulting item value for each weapon. Ties favor the current modifier.
+		Counts: Changes: {0} · Matching: {1} · Skipped: {2}
+		Confirm: Reforge All
+		Refresh: Refresh
+		Cancel: Cancel
+		Empty: No reforgable weapons or tools found
+		StorageError: Cannot read weapon storage; operation stopped
+		Unavailable: Wait for your item animation to finish and try again
+		NoScroll: No weapon scroll in your inventory or on the cursor
+		NoChanges: No weapons changed; no scroll consumed
+		Success: Changed {0} weapons; {1} already matched, {2} skipped. Consumed one weapon scroll.
+	}
+
+	AccessoryReforge: {
+		Title: Mass Accessory Reforge
+		Hint: Inventory, all loadouts, vanity and modded slots
+		SelectPrefix: Choose an accessory modifier
+		Counts: Changes: {0} · Matching: {1} · Skipped: {2}
+		Confirm: Reforge All
+		Refresh: Refresh
+		Cancel: Cancel
+		Empty: No reforgable accessories found
+		StorageError: Cannot read all accessory slots; operation stopped
+		Unavailable: Wait for your item animation to finish and try again
+		NoScroll: No accessory scroll in your inventory or on the cursor
+		NoChanges: No accessories changed; no scroll consumed
+		Success: Changed {0} accessories; {1} already matched, {2} skipped. Consumed one accessory scroll.
+	}
+}

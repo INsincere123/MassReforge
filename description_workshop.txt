@@ -1,0 +1,23 @@
+[h1]批量重铸 / MassReforge[/h1]
+还在为一件件找哥布林工匠重铸发愁？买张重铸券，选好词条，全部适用武器或饰品一次搞定。
+
+[list]
+[*]武器重铸券：哥布林工匠出售，覆盖背包和快捷栏的武器、镐、斧、锤。
+[*]饰品重铸券：哥布林工匠出售，覆盖背包、全部配装、外观和模组饰品槽。
+[*]自由选择合法词条；支持模组词条，武器另有“最高级”，逐件按应用后的物品价值选择，同价值优先保留当前词条。
+[*]鼠标物品不作为目标，不适用及已有目标词条的物品保持原样。
+[*]重铸不额外收取金币，确认前显示预计修改、已符合和跳过数量。
+[/list]
+
+[h1]MassReforge[/h1]
+Reforge all compatible items with one scroll.
+
+[list]
+[*]Weapon Reforge Scroll: sold by the Goblin Tinkerer for 22 platinum. Covers inventory and hotbar weapons, pickaxes, axes and hammers.
+[*]Accessory Reforge Scroll: sold for 35 platinum. Covers inventory, all loadouts, vanity and modded accessory slots.
+[*]Choose a valid modifier, or use Best Available for weapons. It selects the modifier with the highest resulting item value for each weapon; ties favor the current modifier.
+[*]Favorited items are included; cursor items are excluded as targets. Incompatible items and items already matching the target remain unchanged.
+[*]Consumes one scroll only when at least one item changes, with no additional coin cost. Preview change, matching and skip counts before confirming.
+[*]A server setting excludes Calamity's Horrible modifier by default. It can be disabled and only affects reforge scrolls.
+[*]Supports English and Simplified Chinese. No other mods required.
+[/list]
