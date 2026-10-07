@@ -15,11 +15,11 @@ namespace MassReforge.Common.GlobalNPCs
                 return;
             shop.Add(new Item(ModContent.ItemType<AccessoryReforgeScroll>())
             {
-                shopCustomPrice = Item.buyPrice(platinum: 35),
+                shopCustomPrice = Item.buyPrice(platinum: 15),
             });
             shop.Add(new Item(ModContent.ItemType<WeaponReforgeScroll>())
             {
-                shopCustomPrice = Item.buyPrice(platinum: 22),
+                shopCustomPrice = Item.buyPrice(platinum: 10),
             });
         }
 
@@ -36,9 +36,9 @@ namespace MassReforge.Common.GlobalNPCs
                 if (item == null || item.IsAir)
                     continue;
                 if (item.type == weaponType)
-                    item.shopCustomPrice = Item.buyPrice(platinum: Math.Clamp(config?.WeaponScrollPricePlatinum ?? 22, 0, 1000));
+                    item.shopCustomPrice = Item.buyPrice(platinum: Math.Clamp(config?.WeaponScrollPricePlatinum ?? 10, 1, 100));
                 else if (item.type == accessoryType)
-                    item.shopCustomPrice = Item.buyPrice(platinum: Math.Clamp(config?.AccessoryScrollPricePlatinum ?? 35, 0, 1000));
+                    item.shopCustomPrice = Item.buyPrice(platinum: Math.Clamp(config?.AccessoryScrollPricePlatinum ?? 15, 1, 100));
             }
         }
     }

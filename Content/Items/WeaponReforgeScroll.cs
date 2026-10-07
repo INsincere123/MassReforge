@@ -18,7 +18,7 @@ namespace MassReforge.Content.Items
             Item.useStyle = ItemUseStyleID.HoldUp;
             Item.useTime = Item.useAnimation = 20;
             Item.rare = ItemRarityID.Yellow;
-            Item.value = Item.buyPrice(platinum: 20);
+            Item.value = Item.buyPrice(platinum: 1);
         }
 
         // 打开不扣券，确认实际修改武器后由批量服务统一消耗。

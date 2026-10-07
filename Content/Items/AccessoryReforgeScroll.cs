@@ -18,7 +18,7 @@ namespace MassReforge.Content.Items
             Item.useStyle = ItemUseStyleID.HoldUp;
             Item.useTime = Item.useAnimation = 20;
             Item.rare = ItemRarityID.Yellow;
-            Item.value = Item.buyPrice(platinum: 20);
+            Item.value = Item.buyPrice(platinum: 1);
         }
 
         // 打开界面不消耗；服务在实际修改饰品后扣除一张券。

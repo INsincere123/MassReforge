@@ -6,7 +6,7 @@
 - 饰品重铸券：重铸背包、全部配装、外观与模组饰品槽。
 - 词条可自选，武器支持按应用后价值选择“最高级”。
 - 非鞭子召唤武器默认优先“无情”，重铸券售价可在设置中调整。
-- 至少修改一件才消耗一张券，不额外收费。
+- 至少修改一件才消耗，不额外收费。
 - 默认排除灾厄的骇人词条，可在服务端设置中关闭。
 - 无需其他模组。
 
@@ -14,8 +14,8 @@ MassReforge
 
 One scroll, one click: every eligible item gets reforged.
 
-- Weapon Reforge Scroll (Goblin Tinkerer, 22 platinum by default): reforges eligible weapons and tools in your inventory and hotbar.
-- Accessory Reforge Scroll (Goblin Tinkerer, 35 platinum by default): reforges eligible accessories across your inventory, loadouts, vanity slots, and modded accessory slots.
+- Weapon Reforge Scroll: reforges eligible weapons and tools in your inventory and hotbar.
+- Accessory Reforge Scroll: reforges eligible accessories across your inventory, loadouts, vanity slots, and modded accessory slots.
 - Choose from the available modifiers, or use Best Available for weapons to select the modifier with the highest resulting item value. Non-whip summon weapons prefer Ruthless by default.
 - Consumes one scroll only if at least one item changes, at no additional cost.
 - Calamity's Horrible modifier is excluded by default. Can be disabled in the mod settings.
