@@ -30,7 +30,7 @@ Items: {
 		DisplayName: Weapon Reforge Scroll
 		Tooltip:
 			'''
-			Choose a modifier and reforge all eligible weapons and tools in your inventory and hotbar (excludes ammo and the item on your cursor)
+			Use it directly. Choose a modifier and reforge all eligible weapons and tools in your inventory and hotbar (excludes ammo and the item on your cursor)
 			Best Available selects the modifier with the highest resulting item value; non-whip summon weapons prefer Ruthless by default
 			Consumes one scroll only if at least one weapon changes, at no additional cost
 			'''
@@ -40,7 +40,7 @@ Items: {
 		DisplayName: Accessory Reforge Scroll
 		Tooltip:
 			'''
-			Choose a modifier and reforge all eligible accessories across your inventory, loadouts, vanity slots, and modded accessory slots
+			Use it directly. Choose a modifier and reforge all eligible accessories across your inventory, loadouts, vanity slots, and modded accessory slots
 			Consumes one scroll only if at least one accessory changes, at no additional cost
 			'''
 	}

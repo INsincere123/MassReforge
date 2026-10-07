@@ -1,6 +1,6 @@
 displayName = 批量重铸 / MassReforge
 author = Zelda
-version = 0.1
+version = 0.1.1
 homepage = https://github.com/INsincere123/MassReforge
 hideCode = true
 side = Both
